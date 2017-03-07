@@ -13,6 +13,11 @@ configure_file (
   "${PROJECT_BINARY_DIR}/open_tuner/open_tuner.h"
   )
 
+configure_file (
+  "${PROJECT_SOURCE_DIR}/open_tuner/open_tuner_gui.h.in"
+  "${PROJECT_BINARY_DIR}/open_tuner/open_tuner_gui.h"
+  )
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ..)
 
 set(SOURCE_FILES
@@ -22,7 +27,7 @@ set(SOURCE_FILES
 
 set (open_tuner_INCLUDE_DIR
     "/usr/include/python3.5/"
-    "open_tuner"
+    "${PROJECT_BINARY_DIR}/open_tuner"
     )
 
 include_directories(${open_tuner_INCLUDE_DIR})
