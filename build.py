@@ -1,11 +1,11 @@
 import os
 import subprocess
 import shutil
-from ot_util.print_helper import ot_print
+from ot_util.build_helper import ot_print
 
 OT_OS = ""
 OT_PWD = os.getcwd()
-OT_ROOT = OT_PWD
+OT_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 
 def install_package(pkg):
@@ -44,9 +44,7 @@ def build_benchmarks():
 def create_build_files():
     ot_print("generating build files")
     try:
-        subprocess.call(["make", "-f", "build/Makefile", ])
-
-        ot_print("Build Files Generated")
+        subprocess.call(["cmake", ".", "-G", "Unix Makefiles", "-Bbuild/", "-H."])
     except OSError as e:
         if e.errno == os.errno.ENOENT:
             print(os.errno.ENOENT)
@@ -61,11 +59,11 @@ def create_build_files():
 
 def build():
     ot_print("Building project")
+    OT_PWD = OT_ROOT + "/build"
+    os.chdir(OT_PWD)
 
     try:
-        subprocess.call(["cmake", ".", "-G", "Unix Makefiles", "-Bbuild/", "-H."])
-
-        ot_print("Build Files Generated")
+        subprocess.call(["make", "all"])
     except OSError as e:
         if e.errno == os.errno.ENOENT:
             print(os.errno.ENOENT)
