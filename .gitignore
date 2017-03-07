@@ -1,3 +1,11 @@
+################################################
+##########this section to be removed############
+
+#temp files 
+clear_cmakefiles.sh
+
+###############################################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -5,6 +13,8 @@ __pycache__/
 
 #idea files
 .idea/*
+
+
 
 # C extensions
 *.o
