@@ -15,10 +15,10 @@ int main(int argc, const char** argv){
 
     std::cout<<openTunerRoot<<"\n";
 
-    std::string openTunerStr ("/open_tuner/open_tuner.py");
+    std::string openTunerStr ("/open_tuner.py ");
 
     for (int i = 1; i < argc ; ++i) {
-        commandArgs = commandArgs + argv[i];
+        commandArgs = commandArgs + " " +argv[i];
     }
 
     std::string commandString = python3Command + openTunerRoot + openTunerStr + commandArgs;
