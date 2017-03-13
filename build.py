@@ -1,7 +1,7 @@
 import os
 import subprocess
 import shutil
-from ot_util.build_helper import ot_print
+from ot_util.print_helper import ot_print
 
 OT_OS = ""
 OT_PWD = os.getcwd()
