@@ -18,12 +18,6 @@ configure_file (
   "${PROJECT_BINARY_DIR}/include/open_tuner_gui.h"
   )
 
-#set(OUTPUT_NAME "ot")
-
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ..)
-
-#set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}")
-
 set(SOURCE_FILES
     open_tuner/open_tuner.cpp
     open_tuner/open_tuner_gui.cpp

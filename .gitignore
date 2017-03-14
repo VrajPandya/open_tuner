@@ -1,8 +1,11 @@
 ################################################
 ##########this section to be removed############
 
-#temp files 
-clear_cmakefiles.sh
+#temp files
+cmake_install.cmake
+CMakeFiles/*
+CMakeCache.txt
+
 
 ###############################################
 

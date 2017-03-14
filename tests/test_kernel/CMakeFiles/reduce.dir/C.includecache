@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/data_gen.c
+data_gen.h
+/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/data_gen.h
+time.h
+-
+stdlib.h
+-
+
+/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/data_gen.h
+
+/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/reduce.c
+data_gen.h
+/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/data_gen.h
+stdlib.h
+-
+stdio.h
+-
+

@@ -1,14 +1,12 @@
 import os
 import subprocess
 import shutil
+import sys
 from ot_util.print_helper import ot_print
-
-OT_OS = ""
-OT_PWD = os.getcwd()
-OT_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 
 def install_package(pkg):
+    #implement this at the very end
     ot_print("installing " + pkg)
     #install package
     ot_print("complete installing package")
@@ -27,10 +25,9 @@ def check_available_packages():
             continue
         else:
             ot_print(c + " is not available please install it and run the build again")
-            exit(1)
+            sys.exit(1)
 
     return
-
 
 def create_benchmark_build_files():
     return
@@ -74,6 +71,10 @@ def build():
 
     return
 
+def create_test_build_file():
+    return
+
+def build_tests():
 
 def main():
     check_available_packages()
@@ -83,6 +84,9 @@ def main():
 
     create_build_files()
     build()
+
+    create_test_build_file()
+    build_tests()
 
     return
 
