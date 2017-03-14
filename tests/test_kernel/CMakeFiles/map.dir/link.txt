@@ -1,1 +1,0 @@
-/usr/bin/cc     CMakeFiles/map.dir/data_gen.c.o CMakeFiles/map.dir/map.c.o  -o map 

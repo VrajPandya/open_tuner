@@ -1,4 +1,0 @@
-/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/CMakeFiles/edit_cache.dir
-/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/CMakeFiles/rebuild_cache.dir
-/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/CMakeFiles/reduce.dir
-/home/vraj/PycharmProjects/open_tuner/tests/test_kernel/CMakeFiles/map.dir

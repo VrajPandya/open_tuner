@@ -1,1 +1,0 @@
-/usr/bin/cc     CMakeFiles/reduce.dir/data_gen.c.o CMakeFiles/reduce.dir/reduce.c.o  -o reduce 

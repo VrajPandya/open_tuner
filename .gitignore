@@ -2,9 +2,9 @@
 ##########this section to be removed############
 
 #temp files
-cmake_install.cmake
-CMakeFiles/*
-CMakeCache.txt
+*cmake_install.cmake
+*CMakeFiles/*
+*CMakeCache.txt
 
 
 ###############################################
